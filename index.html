@@ -1,0 +1,277 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <!--landing page-->
+
+  <header class="landing">
+    <div class="overlay d-flex align-items-center ">
+     <div> <h1>Branding</h1>
+      <button class="contact">Contact us</button>
+    </div></div> 
+
+  </header>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light  navbar navbar-dark bg-dark  fixed-top ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Branding</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
+
+<section class="collection w-100 d-flex align-items-center justify-content-center ">
+  <div><h2 class="">Browse our collection</h2> 
+  <div class="line"></div>
+  </div>
+</section>
+
+  <div class="container text-center slids">
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="item position-relative">
+                <img src="./1.jpg" class="w-100" alt="">
+
+                <div class="item-caption">
+                    <h4>item title </h4>
+                    <p>lputate at, tempus viverra turpis. Fusce condimentum nunc acs
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-4">
+            <div class="item position-relative">
+                <img src="./2.jpg" class="w-100" alt="">
+
+                <div class="item-caption">
+                    <h4>item title </h4>
+                    <p>lputate at, tempus viverra turpis. Fusce condimentum nunc acs
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="item position-relative">
+                <img src="./3.jpg" class="w-100" alt="">
+
+                <div class="item-caption">
+                    <h4>item title </h4>
+                    <p>lputate at, tempus viverra turpis. Fusce condimentum nunc acs
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-4">
+            <div class="item position-relative">
+                <img src="./4.jpg" class="w-100" alt="">
+
+                <div class="item-caption">
+                    <h4>item title </h4>
+                    <p>lputate at, tempus viverra turpis. Fusce condimentum nunc acs
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-4">
+            <div class="item position-relative">
+                <img src="./5.jpg" class="w-100" alt="">
+
+                <div class="item-caption">
+                    <h4>item title </h4>
+                    <p>lputate at, tempus viverra turpis. Fusce condimentum nunc acs
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="item position-relative">
+                <img src="./6.jpg" class="w-100" alt="">
+
+                <div class="item-caption">
+                    <h4>item title </h4>
+                    <p>lputate at, tempus viverra turpis. Fusce condimentum nunc acs
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+<div class="lightBoxContainer  justify-content-center align-items-center"  id="lightBoxContainer">
+
+    <div class="lightbox-item d-flex align-items-center justify-content-between"  id="lightboxitem">
+        <i class="far fa-arrow-alt-circle-left preve"   id="privice"></i>
+        <i id="closeBtn" class="far fa-times-circle  closing" ></i>
+        <i   id="next"  class="far fa-arrow-alt-circle-right  nexte"></i>
+    </div>
+
+</div>
+
+
+
+
+
+
+<!--crud opearation-->
+
+
+
+
+<div class="container my-5 py-5 shadow rounded W-50">
+  <h1>Add product</h1>
+  <label>ProductName:</label>
+  <input type="text" class="form-control " id="ProductName" />
+  <div class="alert myAlert d-none" role="alert">
+    <strong>please start with capital letter...</strong>
+  </div>
+
+
+  <label>ProductCategory:</label>
+  <input type="text" class="form-control" id="ProductCategory" />
+
+  <label>ProductPrice:</label>
+  <input type="text" class="form-control" id="ProductPrice" />
+
+  <label>ProductDescription:</label>
+  <textarea type="text" class="form-control" id="ProductDescription"></textarea>
+  <div class="alert myAlert my-5 d-none" role="alert" id="lastAlert">
+    <strong>please enter all fields...</strong>
+  </div>
+  <button id="addBtn"  class="btn btn-dark my-5 " onclick="addProduct();" >Add product</button>
+  <button id="updateBtn" class="btn btn-dark my-5  " onclick="updateProduct();" >update product</button>
+</div>
+
+
+<input type="text" class="form-control w-25 m-auto my-5" placeholder="search..."  
+onkeyup="search(this.value)">
+<table class=" w-75 mx-auto my-5 table-striped text-center">
+  <thead>
+    <th>Index</th>
+    <th>Name</th>
+    <th>Category</th>
+    <th>Price</th>
+    <th>description</th>
+    <th>delete</th>
+    <th>update</th>
+  </thead>
+  <tbody id="tbody">
+ 
+  
+  </tbody>
+</table>
+
+
+
+
+
+
+ <!-- Site footer -->
+ <footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h6>About</h6>
+        <p class="text-justify">My name is Ahmed Khaled, I graduated from the Faculty of Computer Science at Thebes Academy, majoring in Software Engineering  and iam a junior front end developer </p>
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Categories</h6>
+        <ul class="footer-links">
+          <li><a href="">Html5- Css3</a></li>
+          <li><a href="">UI developer</a></li>
+          <li><a href="">JavaScript</a></li>
+          <li><a href="">Bootstrap</a></li>
+          <li><a href="">Typescript</a></li>
+          <li><a href="">Angular</a></li>
+        </ul>
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="">About Us</a></li>
+          <li><a href="https://mail.google.com/mail/u/0/#inbox">Contact Us</a></li>
+          <li><a href="">Contribute</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+     <a href="#">ِAhmed Khalid</a>.
+        </p>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <ul class="social-icons">
+        
+          <li ><a   class="d-flex align-items-center justify-content-center "   href="https://github.com/Ahmed3443"><i class="fab fa-github"></i></a></li>
+          <li ><a   class="d-flex align-items-center justify-content-center " href="https://www.linkedin.com/feed/?trk=homepage-basic_google-one-tap-submit"><i class="fab fa-linkedin-in"></i></a></li>   
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  
+
+   
+    <script src="script.js"></script>
+</body>
+
+</html>
